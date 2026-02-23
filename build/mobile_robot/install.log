@@ -6,6 +6,7 @@
 /home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot/model/robot.gazebo
 /home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot/model/robot.xacro
 /home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot/parameters/bridge_parameters.yaml
+/home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot/worlds/my_world.sdf
 /home/pouryajafari/ws_mobile/install/mobile_robot/lib/python3.12/site-packages/mobile_robot-0.0.0-py3.12.egg-info/PKG-INFO
 /home/pouryajafari/ws_mobile/install/mobile_robot/lib/python3.12/site-packages/mobile_robot-0.0.0-py3.12.egg-info/SOURCES.txt
 /home/pouryajafari/ws_mobile/install/mobile_robot/lib/python3.12/site-packages/mobile_robot-0.0.0-py3.12.egg-info/dependency_links.txt

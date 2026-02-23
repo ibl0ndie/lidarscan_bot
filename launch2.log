@@ -1,0 +1,29 @@
+[INFO] [launch]: All log files can be found below /home/pouryajafari/.ros/log/2026-02-23-11-38-44-916224-adminsys-GL702VSK-28880
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [28883]
+[INFO] [create-2]: process started with pid [28884]
+[INFO] [robot_state_publisher-3]: process started with pid [28885]
+[INFO] [parameter_bridge-4]: process started with pid [28887]
+[robot_state_publisher-3] [INFO] [1771835925.278966698] [robot_state_publisher]: Robot initialized
+[create-2] [INFO] [1771835925.287316754] [ros_gz_sim]: Requesting list of world names.
+[create-2] [INFO] [1771835925.890155173] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[create-2] [INFO] [1771835925.901745675] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-2]: process has finished cleanly [pid 28884]
+[parameter_bridge-4] [INFO] [1771835926.311150540] [ros_gz_bridge]: Creating GZ->ROS Bridge: [clock (gz.msgs.Clock) -> clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1771835926.312470070] [ros_gz_bridge]: Creating GZ->ROS Bridge: [joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1771835926.315354711] [ros_gz_bridge]: Creating GZ->ROS Bridge: [odom (gz.msgs.Odometry) -> odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1771835926.317457869] [ros_gz_bridge]: Creating GZ->ROS Bridge: [tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1771835926.319576543] [ros_gz_bridge]: Creating ROS->GZ Bridge: [cmd_vel (geometry_msgs/msg/Twist) -> cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1771835926.320749150] [ros_gz_bridge]: Creating GZ->ROS Bridge: [scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[gazebo-1] libEGL warning: pci id for fd 99: 10de:1be1, driver (null)
+[gazebo-1] 
+[gazebo-1] pci id for fd 101: 10de:1be1, driver (null)
+[gazebo-1] pci id for fd 102: 10de:1be1, driver (null)
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] libEGL warning: pci id for fd 99: 10de:1be1, driver (null)
+[gazebo-1] 
+[gazebo-1] pci id for fd 101: 10de:1be1, driver (null)
+[gazebo-1] pci id for fd 102: 10de:1be1, driver (null)
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] libEGL warning: pci id for fd 99: 10de:1be1, driver (null)
+[gazebo-1] 

@@ -12,9 +12,10 @@ def generate_launch_description():
     namePackage = 'mobile_robot'
     modelFileRelativePath = 'model/robot.xacro'
     pathModelFile = os.path.join(get_package_share_directory(namePackage), modelFileRelativePath)
+    pathWorldFile = os.path.join(get_package_share_directory(namePackage), 'worlds', 'my_world.sdf')
     robotDescription = xacro.process_file(pathModelFile).toxml()
     gazebo_rosPackageLaunch=PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py'))
-    gazeboLaunch=IncludeLaunchDescription(gazebo_rosPackageLaunch,launch_arguments={'gz_args': ['-r -v v4 empty.sdf'], 'on_exit_shutdown':'true'}.items())
+    gazeboLaunch=IncludeLaunchDescription(gazebo_rosPackageLaunch,launch_arguments={'gz_args': f'-r -v 4 {pathWorldFile}', 'on_exit_shutdown':'true'}.items())
     spawnModelNodeGazebo=Node(
         package='ros_gz_sim',
         executable='create',
@@ -26,7 +27,7 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        parameters=[{'robot_description': robotDescription, use_sim_time: True}]
+        parameters=[{'robot_description': robotDescription, 'use_sim_time': True}]
     )
 
     bridge_params = os.path.join(get_package_share_directory(namePackage), 'parameters', 'bridge_parameters.yaml')
@@ -34,14 +35,20 @@ def generate_launch_description():
     start_gazebo_ros_bridge_cmd = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
-        arguments=['--ros-args','-p',f'config_file:= + {bridge_params}',],
+        arguments=[
+        '--ros-args',
+        '-p',
+        f'config_file:={bridge_params}',
+        ],
         output='screen',
     )
 
 
-    LaunchDescription= LaunchDescription()
-    LaunchDescriptionObject.add_action(gazeboLaunch)
-    LaunchDescriptionObject.add_action(spawnModelNodeGazebo)
-    LaunchDescriptionObject.add_action(nodeRobotStatePublisher)
-    LaunchDescriptionObject.add_action(start_gazebo_ros_bridge_cmd)
-    return LaunchDescriptionObject
+    ld = LaunchDescription()
+
+    ld.add_action(gazeboLaunch)
+    ld.add_action(spawnModelNodeGazebo)
+    ld.add_action(nodeRobotStatePublisher)
+    ld.add_action(start_gazebo_ros_bridge_cmd)
+
+    return ld
