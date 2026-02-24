@@ -1,0 +1,1 @@
+/home/pouryajafari/ws_mobile/src/mobile_robot/launch/rviz.launch.py

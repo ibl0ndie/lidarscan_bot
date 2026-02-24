@@ -135,7 +135,7 @@
     <xacro:inertia_wheel/>
 </link>
 
-<joint name="caster_joint" type="continuous">
+<joint name="caster_joint" type="fixed">
     <parent link="body_link"/>
     <child link="caster_link"/>
     <origin rpy="0 0 0" xyz="${s3} 0 ${r}"/>

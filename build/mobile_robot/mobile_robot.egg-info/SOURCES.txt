@@ -8,6 +8,7 @@ setup.py
 ../../build/mobile_robot/mobile_robot.egg-info/top_level.txt
 ../../build/mobile_robot/mobile_robot.egg-info/zip-safe
 launch/gazebo_model.launch.py
+launch/rviz.launch.py
 mobile_robot/__init__.py
 model/robot.gazebo
 model/robot.xacro
