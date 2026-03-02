@@ -1,0 +1,23 @@
+[1.171s] Invoking command in '/home/pouryajafari/ws_mobile/build/mobile_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pouryajafari/ws_mobile/build/mobile_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pouryajafari/ws_mobile/install/mobile_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/pouryajafari/ws_mobile/build/mobile_robot/build --no-deps symlink_data --force
+[1.614s] running develop
+[1.912s] running egg_info
+[1.941s] writing mobile_robot.egg-info/PKG-INFO
+[1.941s] writing dependency_links to mobile_robot.egg-info/dependency_links.txt
+[1.941s] writing requirements to mobile_robot.egg-info/requires.txt
+[1.942s] writing top-level names to mobile_robot.egg-info/top_level.txt
+[2.001s] reading manifest file 'mobile_robot.egg-info/SOURCES.txt'
+[2.002s] writing manifest file 'mobile_robot.egg-info/SOURCES.txt'
+[2.031s] running build_ext
+[2.031s] Creating /home/pouryajafari/ws_mobile/install/mobile_robot/lib/python3.12/site-packages/mobile-robot.egg-link (link to .)
+[2.032s] 
+[2.032s] Installed /home/pouryajafari/ws_mobile/build/mobile_robot
+[2.032s] running symlink_data
+[2.033s] symbolically linking /home/pouryajafari/ws_mobile/build/mobile_robot/resource/mobile_robot -> /home/pouryajafari/ws_mobile/install/mobile_robot/share/ament_index/resource_index/packages
+[2.033s] symbolically linking /home/pouryajafari/ws_mobile/build/mobile_robot/package.xml -> /home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot
+[2.033s] symbolically linking /home/pouryajafari/ws_mobile/build/mobile_robot/launch/rviz.launch.py -> /home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot/launch
+[2.033s] symbolically linking /home/pouryajafari/ws_mobile/build/mobile_robot/launch/gazebo_model.launch.py -> /home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot/launch
+[2.033s] symbolically linking /home/pouryajafari/ws_mobile/build/mobile_robot/model/robot.gazebo -> /home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot/model
+[2.033s] symbolically linking /home/pouryajafari/ws_mobile/build/mobile_robot/model/robot.xacro -> /home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot/model
+[2.034s] symbolically linking /home/pouryajafari/ws_mobile/build/mobile_robot/parameters/bridge_parameters.yaml -> /home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot/parameters
+[2.034s] symbolically linking /home/pouryajafari/ws_mobile/build/mobile_robot/worlds/my_world.sdf -> /home/pouryajafari/ws_mobile/install/mobile_robot/share/mobile_robot/worlds
+[2.075s] Invoked command in '/home/pouryajafari/ws_mobile/build/mobile_robot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pouryajafari/ws_mobile/build/mobile_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pouryajafari/ws_mobile/install/mobile_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/pouryajafari/ws_mobile/build/mobile_robot/build --no-deps symlink_data --force
