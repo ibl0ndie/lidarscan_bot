@@ -9,16 +9,14 @@
 <xacro:property name="r" value="0.15"/>
 <xacro:property name="d" value="0.1"/>
 
-<xacro:property name="s1" value="${b/2+r}"/>
+<xacro:property name="s1" value="${b/2+r+0.05}"/>
 <xacro:property name="s2" value="${2*r}"/>
 <xacro:property name="s3" value="${2*r}"/>
 <xacro:property name="s4" value="${c/2+d/2}"/>
 
-<xacro:property name="d1" value="2710.0"/>
-
-<xacro:property name="d2" value="2710.0"/>
-
-<xacro:property name="d3" value="2710.0"/>
+<xacro:property name="d1" value="500.0"/>
+<xacro:property name="d2" value="1000.0"/>
+<xacro:property name="d3" value="1000.0"/>
 
 <xacro:property name="m1" value="${d1*a*b*c}"/>
 <xacro:property name="m2" value="${d2*pi_const*r*r*d}"/>
@@ -87,7 +85,7 @@
     <parent link="body_link"/>
     <child link="wheel1_link"/>
     <origin rpy="0 0 0" xyz="${-s2} ${-s4} ${r}"/>
-    <axis xyz="0 1 0"/>
+    <axis xyz="0 -1 0"/>
     <limit effort="50000" velocity="10.0"/>
     <dynamics damping="1.0" friction="1.0"/>
 </joint>
@@ -113,7 +111,7 @@
     <parent link="body_link"/>
     <child link="wheel2_link"/>
     <origin rpy="0 0 0" xyz="${-s2} ${s4} ${r}"/>
-    <axis xyz="0 1 0"/>
+    <axis xyz="0 -1 0"/>
     <limit effort="50000" velocity="10.0"/>
     <dynamics damping="1.0" friction="1.0"/>
 </joint>
@@ -180,13 +178,16 @@
         <origin rpy="0 0 0.05" xyz="0 0 0"/>
     </collision>
     <inertial>
-        <mass value="1e-6" />
+        <mass value="0.1" />
         <origin xyz="0 0 0" rpy="0 0 0" />
-        <inertia ixx="1e-6" ixy="0" ixz="0" 
-                            iyy="1e-6" iyz="0" izz="1e-6"
-        />
-        </inertial>
+        <inertia ixx="0.001" ixy="0" ixz="0" 
+                 iyy="0.001" iyz="0" izz="0.001" />
+    </inertial>
 </link>
 
+<gazebo reference="caster_link">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+</gazebo>
 
 </robot>

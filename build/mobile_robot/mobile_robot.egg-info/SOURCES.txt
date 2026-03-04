@@ -10,11 +10,14 @@ setup.py
 launch/gazebo_model.launch.py
 launch/rviz.launch.py
 mobile_robot/__init__.py
+mobile_robot.egg-info/PKG-INFO
+mobile_robot.egg-info/SOURCES.txt
+mobile_robot.egg-info/dependency_links.txt
+mobile_robot.egg-info/requires.txt
+mobile_robot.egg-info/top_level.txt
+mobile_robot.egg-info/zip-safe
 model/robot.gazebo
 model/robot.xacro
 parameters/bridge_parameters.yaml
 resource/mobile_robot
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
 worlds/my_world.sdf
